@@ -54,5 +54,5 @@ function playGame(userInput) {
     result.innerHTML = output;
 }
 
-var userInput = prompt();
+var userInput = prompt('Rock, Paper, or Scissors?');
 playGame(userInput);
