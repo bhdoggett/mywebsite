@@ -48,6 +48,8 @@ function playGame(userInput) {
     var computerChoice = getComputerChoice();
     console.log('Computer Choice', computerChoice);
     console.log(determineWinner(userChoice, computerChoice));
+    let result = document.getElementById('result'); 
+    result.innerHTML = 'hello';
 }
 
 var userInput = prompt();
