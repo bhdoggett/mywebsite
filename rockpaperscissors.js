@@ -7,12 +7,6 @@ var getUserChoice = function (userInput) {
     }
 }
 
-// console.log(getUserChoice('Rock'));
-// console.log(getUserChoice('Paper'));
-// console.log(getUserChoice('Scissors'));
-// getUserChoice('Banana');
-
-
 var getComputerChoice = function () {
     var randomNumber = Math.floor(Math.random() * 3);
     if (randomNumber === 0) {
@@ -23,8 +17,6 @@ var getComputerChoice = function () {
         return 'scissors';
     }
 }
-
-// console.log(getComputerChoice());
 
 function determineWinner(userChoice, computerChoice) {
     var winner;
@@ -49,8 +41,6 @@ function determineWinner(userChoice, computerChoice) {
         return 'The user wins!';
     }
 }
-
-// console.log(determineWinner('scissors', 'scissors'));
 
 function playGame(userInput) {
     var userChoice = getUserChoice(userInput);
