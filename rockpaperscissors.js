@@ -48,8 +48,10 @@ function playGame(userInput) {
     var computerChoice = getComputerChoice();
     console.log('Computer Choice', computerChoice);
     console.log(determineWinner(userChoice, computerChoice));
-    let result = document.getElementById('result'); 
-    result.innerHTML = 'hello';
+    let result = document.getElementById('result');
+    let winner = determineWinner(userChoice, computerChoice);
+    let output = `You picked ${userChoice}, Computer picked ${computerChoice}. ${winner}`
+    result.innerHTML = output;
 }
 
 var userInput = prompt();
